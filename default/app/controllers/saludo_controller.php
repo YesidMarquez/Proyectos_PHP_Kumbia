@@ -1,9 +1,12 @@
-<?php 
+<?php
+/**
+ * Controller Saludo
+ */
 class SaludoController extends AppController {
- 
-    public function hola() 
-    {
-        //Ver método select[1]
-        View::select(NULL); //no mostramos la vista, solo el template
+    /**
+     * mÃ©todo para saludar
+     */
+    public function hola() {
+        $this->fecha = date("Y-m-d H:i"); 
     }
 }
